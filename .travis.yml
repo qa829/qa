@@ -1,0 +1,8 @@
+dist: precise
+language: android
+
+script:
+- uptime
+- pwd
+- uname -a
+- cat /etc/os-release
