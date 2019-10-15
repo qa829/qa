@@ -1,6 +1,5 @@
 dist: precise
 language: android
-group: edge
 
 script:
 - uptime
