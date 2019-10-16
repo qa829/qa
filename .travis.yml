@@ -1,8 +1,5 @@
-dist: precise
-language: android
-
+os: osx
 script:
-- uptime
-- pwd
-- uname -a
-- cat /etc/os-release
+- brew info
+- brew update
+- brew info
