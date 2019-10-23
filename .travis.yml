@@ -15,7 +15,7 @@
 #   directories:
 #     - foo
    
-language: minimal
+language: python
 python:
   - "2.8"
 install: skip
