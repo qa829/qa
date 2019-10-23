@@ -5,12 +5,24 @@
 # - brew update
 # - brew info
 
-language: bash
-arch:
-  - amd64
-  - arm64
+# language: bash
+# arch:
+#   - amd64
+#   - arm64
+# install: skip
+# script: skip
+# cache:
+#   directories:
+#     - foo
+   
+language: python
+python:
+  - "2.7"
 install: skip
-script: skip
-cache:
-  directories:
-    - foo
+script: python ./src/hello.py
+matrix:
+  include:
+    - arch: arm64
+      os: linux
+    - arch: amd64
+      os: linux
