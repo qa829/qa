@@ -21,7 +21,7 @@ python:
 install: skip
 script:
 - python -V
-- python ./src/hello.py
+#- python ./src/hello.py
 matrix:
   include:
     - arch: arm64
