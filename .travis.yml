@@ -1,6 +1,16 @@
-os: osx
-language: generic
-script:
-- brew info
-- brew update
-- brew info
+# os: osx
+# language: generic
+# script:
+# - brew info
+# - brew update
+# - brew info
+
+language: bash
+arch:
+  - amd64
+  - arm64
+install: skip
+script: skip
+cache:
+  directories:
+    - foo
