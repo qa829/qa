@@ -15,7 +15,7 @@
 #   directories:
 #     - foo
    
-language: python
+language: minimal
 python:
   - "2.7"
 install: skip
@@ -28,3 +28,9 @@ matrix:
       os: linux
     - arch: amd64
       os: linux
+    - arch: arm64
+      os: linux
+      dist: bionic
+    - arch: amd64
+      os: linux
+      dist: bionic
