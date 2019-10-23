@@ -17,7 +17,7 @@
    
 language: minimal
 python:
-  - "2.7"
+  - "2.8"
 install: skip
 script:
 - python -V
@@ -26,11 +26,15 @@ matrix:
   include:
     - arch: arm64
       os: linux
+      name: xenial
     - arch: amd64
       os: linux
+      name: xenial
     - arch: arm64
       os: linux
       dist: bionic
+      name: bionic
     - arch: amd64
       os: linux
       dist: bionic
+      name: bionic
