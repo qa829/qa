@@ -15,26 +15,25 @@
 #   directories:
 #     - foo
    
+arch:
+- arm64
+- s390x
+- ppc64le
+
 language: python
 python:
-  - "3.8.0"
+  - "3.8"
+  - "3.7"
+  - "3.6"
+  - "3.5"
+  - "2.7"
+
 install: skip
 script:
 - python -V
 #- python ./src/hello.py
 matrix:
   include:
-    - arch: arm64
-      os: linux
-      name: xenial
-    - arch: amd64
-      os: linux
-      name: xenial
-    - arch: arm64
-      os: linux
-      dist: bionic
-      name: bionic
-    - arch: amd64
-      os: linux
-      dist: bionic
+    - name: xenial
+    - dist: bionic
       name: bionic
