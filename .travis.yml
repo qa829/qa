@@ -1,41 +1,13 @@
-# # os: osx
-# # language: generic
-# # script:
-# # - brew info
-# # - brew update
-# # - brew info
-
-# # language: bash
-# # arch:
-# #   - amd64
-# #   - arm64
-# # install: skip
-# # script: skip
-# # cache:
-# #   directories:
-# #     - foo
-   
 arch:
 - arm64
 - s390x
 - ppc64le
 - amd64
-
-language: minimal
-# python:
-#   - "3.8"
-#   - "3.7"
-#   - "3.6"
-#   - "3.5"
-#   - "2.7"
-
-# install: skip
-script:
-- env
-# - python -V
-# #- python ./src/hello.py
-# matrix:
-#   include:
-#     - name: xenial
-#     - dist: bionic
-#       name: bionic
+dist: bionic
+addons:
+  apt:
+    sources:
+      - ppa:chris-lea/redis-server
+    packages:
+    - redis-tools
+    - redis-server
