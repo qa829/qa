@@ -11,3 +11,7 @@ addons:
     packages:
     - redis-tools
     - redis-server
+
+install: skip
+script:
+- redis-server -v
