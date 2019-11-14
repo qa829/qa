@@ -1,17 +1,21 @@
-arch:
-- arm64
-- s390x
-- ppc64le
-- amd64
-dist: bionic
-addons:
-  apt:
-    sources:
-      - ppa:chris-lea/redis-server
-    packages:
-    - redis-tools
-    - redis-server
+language: c
 
-install: skip
+compiler:
+  - gcc
+
+arch:
+  - amd64
+  - arm64
+  - ppc64le
+
+os:
+  - linux
+
+# before_install: ./.ci/${TRAVIS_OS_NAME}-setup.sh
+
 script:
-- redis-server -v
+    - uname -a
+    - echo TRAVIS_ARCH = $TRAVIS_ARCH
+    - python --version
+    - pip -V
+    - pip install --disable-pip-version-check --user six flake8 hacking
