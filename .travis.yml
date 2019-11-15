@@ -5,9 +5,9 @@ compiler:
   - gcc
 
 arch:
-  - amd64
-  - arm64
-  - ppc64le
+#  - amd64
+#  - arm64
+#  - ppc64le
   - s390x
 
 os:
@@ -18,6 +18,7 @@ os:
 script:
     - uname -a
     - echo TRAVIS_ARCH = $TRAVIS_ARCH
-    - python --version
-    - pip -V
-    - pip install --disable-pip-version-check --user six flake8 hacking
+    - cat /etc/resolv.conf
+#    - python --version
+#    - pip -V
+#    - pip install --disable-pip-version-check --user six flake8 hacking
