@@ -4,10 +4,11 @@ dist: xenial
 #compiler:
 #  - gcc
 
-service:
+services:
 - redis
 - mysql
 - rabbitmq
+- mongodb
 
 arch:
 #  - amd64
@@ -18,6 +19,9 @@ arch:
 os:
   - linux
 
+before_install:
+  - mysql -e 'CREATE DATABASE myapp_test;'
+  
 script:
     - uname -a
     - echo TRAVIS_ARCH = $TRAVIS_ARCH
