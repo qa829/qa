@@ -1,11 +1,11 @@
-language: c
+#language: c
 dist: xenial
 
-compiler:
-  - gcc
+#compiler:
+#  - gcc
 
 arch:
-#  - amd64
+  - amd64
 #  - arm64
 #  - ppc64le
   - s390x
@@ -13,12 +13,17 @@ arch:
 os:
   - linux
 
-# before_install: ./.ci/${TRAVIS_OS_NAME}-setup.sh
-
 script:
     - uname -a
     - echo TRAVIS_ARCH = $TRAVIS_ARCH
     - cat /etc/resolv.conf
-#    - python --version
-#    - pip -V
+    - python --version
+    - pip -V
+    - cat /etc/os-release
+    - uname -a
+    - apt update && apt upgrade -y
+    - cat /etc/os-release
+    - ruby -v
+    - php -v
+    - java -version
 #    - pip install --disable-pip-version-check --user six flake8 hacking
