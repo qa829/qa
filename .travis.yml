@@ -1,4 +1,4 @@
-#language: c
+language: c
 dist: xenial
 
 #compiler:
@@ -7,11 +7,12 @@ dist: xenial
 service:
 - redis
 - mysql
+- rabbitmq
 
 arch:
-  - amd64
-#  - arm64
-#  - ppc64le
+#  - amd64
+  - arm64
+  - ppc64le
   - s390x
 
 os:
@@ -23,11 +24,12 @@ script:
     - cat /etc/resolv.conf
     - python --version
     - pip -V
-    - cat /etc/os-release
-    - uname -a
-    - sudo apt update && sudo apt upgrade -y
-    - cat /etc/os-release
+    #- cat /etc/os-release
+    #- uname -a
+    #- sudo apt update && sudo apt upgrade -y
+    #- cat /etc/os-release
     - ruby -v
     - php -v
     - java -version
+    -  ps auxwf
 #    - pip install --disable-pip-version-check --user six flake8 hacking
