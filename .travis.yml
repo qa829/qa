@@ -4,6 +4,10 @@ dist: xenial
 #compiler:
 #  - gcc
 
+service:
+- redis
+- mysql
+
 arch:
   - amd64
 #  - arm64
