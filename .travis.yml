@@ -9,6 +9,7 @@ services:
 - mysql
 - rabbitmq
 - mongodb
+- postgresql
 
 arch:
 #  - amd64
