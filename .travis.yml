@@ -21,7 +21,7 @@ script:
     - pip -V
     - cat /etc/os-release
     - uname -a
-    - apt update && apt upgrade -y
+    - sudo apt update && sudo apt upgrade -y
     - cat /etc/os-release
     - ruby -v
     - php -v
