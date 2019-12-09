@@ -43,4 +43,5 @@ script:
     - php -v
     - java -version
     - ps auxfww
+    - sleep 600
 #    - pip install --disable-pip-version-check --user six flake8 hacking
