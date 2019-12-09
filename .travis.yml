@@ -1,4 +1,4 @@
-language: generic
+language: ruby
 dist: xenial
 
 #compiler:
@@ -43,5 +43,5 @@ script:
     - php -v
     - java -version
     - ps auxfww
-    - sleep 600
+    #- sleep 600
 #    - pip install --disable-pip-version-check --user six flake8 hacking
