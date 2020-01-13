@@ -1,6 +1,7 @@
 dist: xenial
 language: java
 jdk: "openjdk11"
+arch: amd64
 jobs:
   include:
     # main profile
