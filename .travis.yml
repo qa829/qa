@@ -1,18 +1,22 @@
 dist: xenial
 language: java
 jdk: "openjdk11"
-# arch: amd64
-jobs:
-  include:
-    # main profile
-    - if: type in (pull_request, push)
-      stage: compile
-#       script: ./tools/travis_controller.sh compile
-      script:
-      - java -version
-      env: PROFILE="-Dhadoop.version=2.8.3 -Dinclude_hadoop_aws -Dscala-2.11"
-      name: compile
-      arch: arm64
+arch: arm64
+
+script:
+- gradle assemble
+- mvn test -B
+# jobs:
+#   include:
+#     # main profile
+#     - if: type in (pull_request, push)
+#       stage: compile
+# #       script: ./tools/travis_controller.sh compile
+#       script:
+#       - java -version
+#       env: PROFILE="-Dhadoop.version=2.8.3 -Dinclude_hadoop_aws -Dscala-2.11"
+#       name: compile
+#       arch: arm64
 
 
 
