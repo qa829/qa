@@ -1,11 +1,12 @@
 dist: xenial
-language: java
-jdk: "openjdk11"
+language: ruby
+# jdk: "openjdk11"
 arch: arm64
 
 script:
-- gradle assemble
-- mvn test -B
+- ruby -v
+# - gradle assemble
+# - mvn test -B
 # jobs:
 #   include:
 #     # main profile
