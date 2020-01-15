@@ -5,6 +5,7 @@ arch: arm64
 
 script:
 - ruby -v
+- docker-compose -v
 # - gradle assemble
 # - mvn test -B
 # jobs:
