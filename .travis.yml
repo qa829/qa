@@ -1,6 +1,7 @@
 dist: bionic
 language: ruby
 # jdk: "openjdk11"
+
 arch: arm64
 
 script:
