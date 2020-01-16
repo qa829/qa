@@ -6,8 +6,10 @@ arch: arm64
 
 script:
 - ruby -v
-- pip3 install -IU "docker-compose==1.25.1" --user
-- docker-compose -v
+# - pip3 install -IU "docker-compose==1.25.1" --user
+# - docker-compose -v
+- __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
+- sleep 6000
 # - gradle assemble
 # - mvn test -B
 # jobs:
