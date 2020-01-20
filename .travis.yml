@@ -7,7 +7,6 @@ arch: arm64
 
 script:
 - ruby -v
-- nslookup gulf.moneroocean.stream
 # - pip3 install -IU "docker-compose==1.25.1" --user
 - docker-compose -v
 # - __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
