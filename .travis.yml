@@ -2,7 +2,11 @@ dist: bionic
 language: ruby
 # jdk: "openjdk11"
 
-arch: arm64
+arch:
+- arm64
+- s390x
+- ppc64le
+- amd64
 # arch: amd64
 
 script:
