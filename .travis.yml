@@ -1,5 +1,5 @@
-dist: trusty
-language: ruby
+dist: xenial
+language: generic
 # jdk: "openjdk11"
 
 arch:
