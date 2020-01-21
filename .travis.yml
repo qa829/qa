@@ -1,5 +1,5 @@
 dist: bionic
-language: ruby
+language: generic
 # jdk: "openjdk11"
 
 arch:
