@@ -1,5 +1,5 @@
-dist: xenial
-language: generic
+dist: bionic
+language: minimal
 # jdk: "openjdk11"
 
 arch:
