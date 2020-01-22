@@ -1,5 +1,5 @@
 dist: bionic
-language: generic
+language: minimal
 # jdk: "openjdk11"
 
 arch:
