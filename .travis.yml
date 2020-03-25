@@ -1,6 +1,6 @@
 dist: bionic
 language: ruby
-group: dev
+# group: dev
 # jdk: "openjdk11"
 
 arch:
