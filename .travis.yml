@@ -3,7 +3,7 @@ language: minimal
 # jdk: "openjdk11"
 
 arch:
-# - arm64
+- arm64
 - s390x
 # - ppc64le
 - amd64
