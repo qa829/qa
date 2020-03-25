@@ -5,7 +5,7 @@ language: minimal
 arch:
 - arm64
 - s390x
-- ppc64le
+# - ppc64le
 - amd64
 # arch: amd64
 
