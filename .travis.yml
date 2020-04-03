@@ -1,13 +1,19 @@
-dist: bionic
-language: minimal
+# dist: bionic
+dist: xenial
+language: ruby
 # jdk: "openjdk11"
 
 arch:
 # - arm64
-- s390x
+# - s390x
 # - ppc64le
 - amd64
 # arch: amd64
+
+rvm:
+- 2.7.0
+- 2.7.1
+- 2.6.5
 
 script:
 - ruby -v
