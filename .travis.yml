@@ -1,6 +1,7 @@
 # dist: bionic
 dist: xenial
 language: ruby
+virt: lxd
 # jdk: "openjdk11"
 
 arch:
@@ -20,7 +21,7 @@ rvm:
 script:
 - ruby -v
 # - pip3 install -IU "docker-compose==1.25.1" --user
-- docker-compose -v
+# - docker-compose -v
 # - __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
 # - sleep 6000
 # - gradle assemble
